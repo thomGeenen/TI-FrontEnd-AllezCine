@@ -1,151 +1,150 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>One Page Layout</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Be Movies</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
   <body>
-    <header>
-
-      <div id="top-header">
-        <img src="assets/img/logo.png" alt="" id="header-logo">
-
-        <div class="searching">
-          <input type="search" id="search-box" placeholder="Recherche" /> <button type="submit" name="searcher" id="searcher">Go</button>
-        </div>
-
-        <div id="info-call-login">
-          <p><i class="fa fa-phone" aria-hidden="true"></i>(+000) 123 345 653</p>
-          <button type="button" href="#" name="login-button" id="login-button">LOGIN</button>
-        </div>
-      </div>
-
-      <div id="bottom-header">
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li><a href="" class="menu-kind">Films</a>
-              <ul>
-                <li>Actions</li>
-                <li>Adventure</li>
-                <li>Policier</li>
-                <li>...</li>
-              </ul>
-            </li>
-            <li><a href="#" class="menu-kind">Séries</a>
-              <ul>
-                <li>Actions</li>
-                <li>Adventure</li>
-                <li>Policier</li>
-                <li>...</li>
-              </ul>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div id="popup">
-      <div id="container">
-
-        <h3>Nous utilisons des cookies</h3>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-        <button type="button" name="button" id="agreed">Accepter</button>
-        <button type="button" name="button" id="refused" onclick="">Refuser</button>
-      </div>
-
-    </div>
-
-    <div class="popup-age">
-      <div class="container">
-        <form class="" action="" method="post">
-          <label for="age">Quel est votre age ? </label>
-          <input type="text" id="age" placeholder="18">
-          <button type="submit" name="sender" id="sender">Confirmer</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- <div class="social-media">
-      <div class="social">Facebook</div>
-      <div class="social">Twitter</div>
-      <div class="social">Google +</div>
-    </div> -->
-
-    <div id="main-wrapper">
-      <div class="main-banner">
-        <div class="banner" style="background-image: url('assets/img/tarzan.jpg');">
-          <div class="banner-description">
-            <button type="button" name="button" id="left-button"><</button>
-            <div id="movie-banner-description">
-              <button type="button" id="banner-button" name="button">TARZAN</button>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    <div class="main-container">
+      <!-- HEADER -->
+      <div class="container header">
+        <header>
+          <div class="row">
+            <div class="col-sm-3">
+              <img class="img-responsive logo-header" src="images/logo.png" alt="Responsive image">
             </div>
-            <button type="button" name="button" id="right-button">></button>
+            <div class="col-sm-6">
+              <div class="recherche">
+                <input type="text" class="search-field" placeholder="Recherche">
+                <button type="button" class="go-button">Go</button>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <p class="phone">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+32 (0)2/ 675 55 47
+              </p>
+            </div>
+            <div class="col-sm-1">
+              <button type="button" class="btn btn-default login">LOGIN</button>
+            </div>
           </div>
-        </div>
-        <div class="banner-proposal">
-          <ul>
-            <li class="film-proposed">
-            <div class="film-image">
-              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
+        </header>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#" class="active">HOME</a>
+          </li>
+          <li class="dropdown">
+              <a class="dropbtn" href="#">Movies</a>
+              <div class="dropdown-content">
+                <a href="#">Action</a>
+                <a href="#">Animation</a>
+                <a href="#">Comedy</a>
             </div>
-            <div class="movie-description">
-              <h4>TARZAN</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#">Movies</a>
+            <div class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Animation</a>
+              <a href="#">Comedy</a>
             </div>
-            </li>
-            <li class="film-proposed">
-            <div class="film-image">
-              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
-            </div>
-            <div class="movie-description">
-              <h4>Maximum Ride</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
-            </div>
-            </li>
-            <li class="film-proposed">
-            <div class="film-image">
-              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
-            </div>
-            <div class="movie-description">
-              <h4>Independance</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
-            </div>
-            </li>
-            <li class="film-proposed">
-            <div class="film-image">
-              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
-            </div>
-            <div class="movie-description">
-              <h4>Central Intelligence</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
-            </div>
-            </li>
-            <li class="film-proposed">
-            <div class="film-image">
-              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
-            </div>
-            <div class="movie-description">
-              <h4>Ice Age</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p></li>
-            </div>
-          </ul>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </nav>
+            
+    <div class="jumbomango">
+      <div class="jumboleft">
+        <img src="images/the-legend-of-tarzan.jpeg">
+        <div class="caption">
+          <div class="p-bar"></div>
+          <button type="button" class="arrow left" aria-label="Left Align">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </button>
+          <span class="description">
+            <button class="orange-b">TARZAN</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, nam, error. Ipsa quod unde eaque, vero temporibus laudantium libero voluptate odio quis blanditiis voluptatum nobis nulla reprehenderit illum quaerat magni!</p>
+          </span>
+          <button type="button" class="arrow right" aria-label="Left Align">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
+      <div class="jumboright">
+        <ul>
+          <li class="active">
+            <a href="">
+              <img src="images/tarzan-thumb.jpg" alt="">
+              <span>
+                <h3>Tarzan</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/gris.png" alt="">
+              <span>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/gris.png" alt="">
+              <span>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/gris.png" alt="">
+              <span>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/gris.png" alt="">
+              <span>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sit dolores dignissimos dicta rem quae dolorum, totam, quas est delectus, illum ad rerum repudiandae facilis nostrum suscipit amet earum impedit.</p>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
 
 
       <div id="latest-movies">
