@@ -486,14 +486,27 @@ iframe {
   text-decoration: none;
 }
 
-h2 {
-  margin-left: 10px;
+.contact-section h2 {
+  margin: 25px 35px;
 }
 
-.contact-section {
+.info-section {
   display: flex;
+  justify-content: space-around;
+
 }
 
 .section {
-  width: 100px; height: 100px;
+  height: 150px; width: 200px;
+  margin: 0px 25px;
+  background-color: rgb(160, 161, 163);
+}
+
+
+
+.fa.fa-user-o, .fa.fa-home, .fa.fa-phone, .fa.fa-envelope-o {
+  padding: 10px 10px 10px 10px;
+  border-radius: 100%;
+  background-color: rgb(255, 139, 4);
+  color: white;
 }
