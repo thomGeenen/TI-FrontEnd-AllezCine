@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>One Page Layout</title>
+  <body>
+    <header>
+
+      <div id="top-header">
+        <img src="assets/img/logo.png" alt="" id="header-logo">
+
+        <div class="searching">
+          <input type="search" id="search-box" placeholder="Recherche" /> <button type="submit" name="searcher" id="searcher">Go</button>
+        </div>
+
+        <div id="info-call-login">
+          <p><i class="fa fa-phone" aria-hidden="true"></i>(+000) 123 345 653</p>
+          <button type="button" href="#" name="login-button" id="login-button">LOGIN</button>
+        </div>
+      </div>
+
+      <div id="bottom-header">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li><a href="" class="menu-kind">Films</a>
+              <ul>
+                <li>Actions</li>
+                <li>Adventure</li>
+                <li>Policier</li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li><a href="#" class="menu-kind">Séries</a>
+              <ul>
+                <li>Actions</li>
+                <li>Adventure</li>
+                <li>Policier</li>
+                <li>...</li>
+              </ul>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="popup">
+      <div id="container">
+
+        <h3>Nous utilisons des cookies</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+        <button type="button" name="button" id="agreed">Accepter</button>
+        <button type="button" name="button" id="refused" onclick="">Refuser</button>
+      </div>
+
+    </div>
+
+    <div class="popup-age">
+      <div class="container">
+        <form class="" action="" method="post">
+          <label for="age">Quel est votre age ? </label>
+          <input type="text" id="age" placeholder="18">
+          <button type="submit" name="sender" id="sender">Confirmer</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="social-media">
+      <div class="social">Facebook</div>
+      <div class="social">Twitter</div>
+      <div class="social">Google +</div>
+    </div> -->
+
+    <div id="main-wrapper">
+      <div class="main-banner">
+        <div class="banner" style="background-image: url('assets/img/tarzan.jpg');">
+          <div class="banner-description">
+            <button type="button" name="button" id="left-button"><</button>
+            <div id="movie-banner-description">
+              <button type="button" id="banner-button" name="button">TARZAN</button>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+            <button type="button" name="button" id="right-button">></button>
+          </div>
+        </div>
+        <div class="banner-proposal">
+          <ul>
+            <li class="film-proposed">
+            <div class="film-image">
+              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
+            </div>
+            <div class="movie-description">
+              <h4>TARZAN</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+            </li>
+            <li class="film-proposed">
+            <div class="film-image">
+              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
+            </div>
+            <div class="movie-description">
+              <h4>Maximum Ride</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
+            </li>
+            <li class="film-proposed">
+            <div class="film-image">
+              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
+            </div>
+            <div class="movie-description">
+              <h4>Independance</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
+            </li>
+            <li class="film-proposed">
+            <div class="film-image">
+              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
+            </div>
+            <div class="movie-description">
+              <h4>Central Intelligence</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+            </div>
+            </li>
+            <li class="film-proposed">
+            <div class="film-image">
+              <img src="./assets/img/hostel-2005.jpg" class="film-cover">
+            </div>
+            <div class="movie-description">
+              <h4>Ice Age</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+
+      <div id="latest-movies">
+        <div class="thmb">
+          <img src="./assets/img/batmanmovie.jpg" class="film-cover-thmb">
+          <div class="movie-information">
+            <p class="title">Titre</p>
+            <p class="year">année</p>
+            <p class="kind">Genre</p>
+          </div>
+        </div>
+        <div class="thmb">
+          <img src="./assets/img/inception-2010.jpg" class="film-cover-thmb">
+          <div class="movie-information">
+            <p class="title">Titre</p>
+            <p class="year">année</p>
+            <p class="kind">Genre</p>
+          </div>
+        </div>
+        <div class="thmb">
+          <img src="./assets/img/intouchables-2011-comedie.jpg" class="film-cover-thmb">
+          <div class="movie-information">
+            <p class="title">Titre</p>
+            <p class="year">année</p>
+            <p class="kind">Genre</p>
+          </div>
+        </div>
+        <div class="thmb">
+          <img src="./assets/img/Survivestyle.jpg" class="film-cover-thmb">
+          <div class="movie-information">
+            <p class="title">Titre</p>
+            <p class="year">année</p>
+            <p class="kind">Genre</p>
+          </div>
+        </div>
+        <div class="thmb">
+          <img src="./assets/img/starwarsempire-1980-scifi.jpg" class="film-cover-thmb">
+          <div class="movie-information">
+            <p class="title">Titre</p>
+            <p class="year">année</p>
+            <p class="kind">Genre</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-movies">
+        <h2>FEATURED MOVIES</h2>
+        <div class="bread-crum">
+          <a href="#">All</a> <a href="#">Actions</a><a href="#">Policiers</a>
+        </div>
+
+        <div class="featured-movies-list">
+          <div class="thmb">
+            <img src="assets/img/shutterisland-2010-thriller.jpg" class="film-cover-thmb">
+            <p>God's Compass</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/hostel-2005.jpg" class="film-cover-thmb">
+            <p>Bad Moms</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/seven-1995-thriller.jpg" class="film-cover-thmb">
+            <p>Jason Bourne</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/WhatWeDoInTheShadow.jpg" class="film-cover-thmb">
+            <p>Rezort</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/starwarsempire-1980-scifi.jpg" class="film-cover-thmb">
+            <p>Peter</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/zoolander-2001-comedie.jpg" class="film-cover-thmb">
+            <p>ISRA 88</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/swissarmyman-2016-comedie.jpg" class="film-cover-thmb">
+            <p>War Dogs</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/thefall-2006-dramatique.jpg" class="film-cover-thmb">
+            <p>The Other Side</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/shutterisland-2010-thriller.jpg" class="film-cover-thmb">
+            <p>Civil War</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/hostel-2005.jpg" class="film-cover-thmb">
+            <p>The Secrets</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/seven-1995-thriller.jpg" class="film-cover-thmb">
+            <p>The Jungle Book</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/WhatWeDoInTheShadow.jpg" class="film-cover-thmb">
+            <p>Assassin's</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="button-more"><button type="button" name="button" id="more-movie">PLUS DE FILMS</button></div>
+        </div>
+
+        <div class="featured-series-list">
+            <h2>FEATURED SERIES TV</h2>
+        <div class="bread-crum">
+          <a href="#">All</a> <a href="#">Actions</a><a href="#">Policiers</a>
+        </div>
+          <div class="thmb">
+            <img src="assets/img/shutterisland-2010-thriller.jpg" class="film-cover-thmb">
+            <p>God's Compass</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/hostel-2005.jpg" class="film-cover-thmb">
+            <p>Bad Moms</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/seven-1995-thriller.jpg" class="film-cover-thmb">
+            <p>Jason Bourne</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/WhatWeDoInTheShadow.jpg" class="film-cover-thmb">
+            <p>Rezort</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/starwarsempire-1980-scifi.jpg" class="film-cover-thmb">
+            <p>Peter</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/starwarsempire-1980-scifi.jpg" class="film-cover-thmb">
+            <p>ISRA 88</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/zoolander-2001-comedie.jpg" class="film-cover-thmb">
+            <p>War Dogs</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/swissarmyman-2016-comedie.jpg" class="film-cover-thmb">
+            <p>The Other Side</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/swissarmyman-2016-comedie.jpg" class="film-cover-thmb">
+            <p>Civil War</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/thefall-2006-dramatique.jpg" class="film-cover-thmb">
+            <p>The Secret Life of Pets</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/shutterisland-2010-thriller.jpg" class="film-cover-thmb">
+            <p>The Jungle Book</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+          <div class="thmb">
+            <img src="assets/img/WhatWeDoInTheShadow.jpg" class="film-cover-thmb">
+            <p>Assassin's Creed 3</p>
+            <p>2016</p>
+            <p>Genre</p>
+          </div>
+        <button type="button" name="button">PLUS DE FILMS</button>
+        </div>
+
+        <div class="movie-shop">
+          <h2>SHOP MOVIE</h2>
+          <div class="shop-container">
+            <div class="left-big-thmb">
+
+            </div>
+            <div class="right-big-thmb">
+
+            </div>
+            <div class="list-thmb">
+              <div class="thmb">
+                <img src="assets/img/shutterisland-2010-thriller.jpg" class="film-cover-thmb">
+                <p>Bad Moms</p>
+                <p>2016</p>
+                <p>14,00 Euro</p>
+              </div>
+              <div class="thmb">
+                <img src="assets/img/hostel-2005.jpg" class="film-cover-thmb">
+                <p>Central Intelligence</p>
+                <p>2016</p>
+                <p>14,00 Euro</p>
+              </div>
+              <div class="thmb">
+                <img src="assets/img/seven-1995-thriller.jpg" class="film-cover-thmb">
+                <p>Light B/t Oceans</p>
+                <p>2016</p>
+                <p>14,00 Euro</p>
+              </div>
+              <div class="thmb">
+                <img src="assets/img/WhatWeDoInTheShadow.jpg" class="film-cover-thmb">
+                <p>X-Men</p>
+                <p>2016</p>
+                <p>14,00 Euro</p>
+              </div>
+              <div class="thmb">
+                <img src="assets/img/starwarsempire-1980-scifi.jpg" class="film-cover-thmb">
+                <p>Peter</p>
+                <p>2016</p>
+                <p>14,00 Euro</p>
+              </div>
+              <div class="thmb">
+                <img src="assets/img/zoolander-2001-comedie.jpg" class="film-cover-thmb">
+                <p>The Secret Life of Pets</p>
+                <p>2016</p>
+                <p>14,00 Euro</p>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h2>CONTACT US</h2>
+
+              <div class="section" id="adress-section">
+                <i></i>
+                <h3>Address</h3>
+              </div>
+              <div class="section" id="contact-section">
+                <i></i>
+                <h3>Call</h3>
+                <p>+18044126235</p>
+                <p>+14056489808</p>
+                <p>+16789339049</p>
+              </div>
+              <div class="section" id="mail-section">
+                <i></i>
+                <h3>Address</h3>
+                <p>example1@mail.com</p>
+                <p>example2@mail.com</p>
+                <p>example3@mail.com</p>
+              </div>
+              <div class="section" id="social-media-section">
+                <i></i>
+                <h3>Call</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Google +</a>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <form class="" action="treatment.php" method="post">
+                <input type="text" name="" placeholder="FIRST NAME">
+                <input type="text" name="" placeholder="LAST NAME" value="">
+                <input type="text" placeholder="mail" name="" value="">
+                <input type="text" placeholder="subject" name="" value="">
+                <textarea name="name" rows="8" cols="80">YOUR MESSAGE</textarea>
+
+                <button type="submit" name="sender">SEND MESSAGE </button>
+              </form>
+            </div>
+
+            <footer>
+              <div class="top-footer">
+                <input type="search" name="" placeholder="Your email..."><button type="button" name="button">SEND</button>
+                <img src="" alt="logo-footer">
+                <img src="" alt="up-img">
+              </div>
+              <div class="bottom-footer">
+                <p>© 2015 One Movies. All rigths reserved | Design by Becode</p>
+
+                <ul>
+                  <li>Movies</li>
+                  <li>FAQ</li>
+                  <li>Action</li>
+                  <li>Adventure</li>
+                  <li>Comedy</li>
+                  <li>Icons</li>
+                  <li>CONTACT US</li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/js/script.js"></script>
+
+  <script type="text/javascript">  function disableScreen() {
+      var div= document.createElement("div");
+      div.className += "overlay";
+      document.body.appendChild(div);
+    }</script>
+  </body>
+</html>
