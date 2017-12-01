@@ -492,21 +492,152 @@ iframe {
 
 .info-section {
   display: flex;
-  justify-content: space-around;
-
+  margin: 0px 30px;
 }
 
 .section {
-  height: 150px; width: 200px;
-  margin: 0px 25px;
-  background-color: rgb(160, 161, 163);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 240px; width: 240px;
+  margin: 20px 20px;
+  background-color: rgb(47, 47, 47);
+  text-align: center;
 }
-
-
 
 .fa.fa-user-o, .fa.fa-home, .fa.fa-phone, .fa.fa-envelope-o {
   padding: 10px 10px 10px 10px;
   border-radius: 100%;
   background-color: rgb(255, 139, 4);
+  color: white;
+  margin-bottom: 15px;
+  position: relative;
+  bottom: 80px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 180px;
+  text-align: center;
+}
+
+.contact-form input {
+  margin: 5px 5px;
+}
+
+.contact-form button {
+  height: 30px;
+  margin: 15px 0px;
+  float: left;
+}
+
+.main-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-name-mail, .last-name-mail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.first-name-mail input, .last-name-mail input {
+  height: 30px;
+}
+
+textarea {
+  border: 1px solid grey;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: rgb(35, 35, 35);
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  margin: 0px 180px;
+  color: white;
+}
+
+.newsletter {
+  margin-top: 15px;
+
+}
+
+#searcher{
+  height: 30px;
+  border-radius: 0px;
+  margin-left: 20px;
+  border: 2px solid white;
+  width: 200px;
+}
+
+#searcher-button {
+  height: 30px;
+  width: 100px;
+  margin-bottom: 30px;
+  background-color: rgb(255, 139, 4);
+  border-radius: 0px;
+}
+
+.input-zone {
+  margin: 25px -15px;
+}
+
+
+
+hr {
+  margin: 0px 180px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 0px 180px;
+}
+
+.bottom-footer p {
+  float: left;
+}
+
+.bottom-footer ul {
+  display: flex;
+  float: right;
+}
+
+.logo {
+  width: 150px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+.bottom-footer ul li {
+  list-style-type: none;
+  margin-right: 10px;
+  color: white;
+}
+
+.bottom-footer ul li a {
+
+}
+
+footer h5 {
+  margin: 15px 5px;
+  color: rgb(255, 139, 4);
+}
+
+
+
+.bottom-footer p {
   color: white;
 }

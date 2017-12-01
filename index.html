@@ -518,6 +518,9 @@
           <div class="section" id="adress-section">
             <i class="fa fa-home"></i>
             <h3>Address</h3>
+            <p>HELLO</p>
+            <p>hello</p>
+            <p>HeLLO</p>
           </div>
           <div class="section" id="contact-section">
             <i class="fa fa-phone"></i>
@@ -536,20 +539,27 @@
           <div class="section" id="social-media-section">
             <i class="fa fa-user-o"></i>
             <h3>Call</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Google +</a>
+            <button type="button" name="button">Facebook</button>
+            <button type="button" name="button">Twitter</button>
+            <button type="button" name="button">Google +</button>
           </div>
         </div>
       </div>
 
       <div class="contact-form">
         <form class="" action="treatment.php" method="post">
-          <input type="text" name="" placeholder="FIRST NAME">
-          <input type="text" name="" placeholder="LAST NAME" value="">
-          <input type="text" placeholder="mail" name="" value="">
-          <input type="text" placeholder="subject" name="" value="">
-          <textarea name="name" rows="8" cols="80">YOUR MESSAGE</textarea>
+          <div class="main-form">
+            <div class="first-name-mail">
+              <input type="text" name="" placeholder="FIRST NAME">
+              <input type="text" placeholder="mail" name="" value="">
+            </div>
+            <div class="last-name-mail">
+              <input type="text" name="" placeholder="LAST NAME" value="">
+
+              <input type="text" placeholder="subject" name="" value="">
+            </div>
+          </div>
+          <textarea name="name" rows="10" cols="176">YOUR MESSAGE</textarea>
 
           <button type="submit" name="sender">SEND MESSAGE </button>
         </form>
@@ -557,10 +567,15 @@
 
       <footer>
         <div class="top-footer">
-          <input type="search" name="" placeholder="Your email..."><button type="button" name="button">SEND</button>
-          <img src="./assets/img/logo.png" alt="logo">
-          <img src="" alt="up-img">
+          <div class="newsletter">
+            <h5>SUBSCRIBE TO US</h5>
+            <div class="input-zone">
+              <input type="search" name="" placeholder="Your email..." id="searcher"><button type="button" name="button" id="searcher-button">SEND</button>
+            </div>
+          </div>
+          <img src="./assets/img/logo.png" class="logo">
         </div>
+        <hr>
         <div class="bottom-footer">
           <p>© 2015 One Movies. All rigths reserved | Design by Becode</p>
 
